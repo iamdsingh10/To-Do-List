@@ -1,0 +1,88 @@
+body{
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.container {
+    border: 1px solid black;
+    width: 40%;
+    min-width: 450px;
+    min-height: 400px;
+    position: absolute;
+     top: 25%;
+    left: 25%;
+    /* transform: translate(-50%, -50%); */
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.controls{
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.controls input{
+    width: 75%;
+    height: 25px;
+    border: none;
+    color: black;
+    position: relative;
+    border-radius: 10px;
+padding: 12px;
+}
+
+.controls button{
+    width: 15%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.task{
+    
+    height: 50px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    cursor: pointer;
+   
+}
+
+.task span{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.task button{
+    width: 15%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: brown;
+    padding: 10px;
+    cursor: pointer;
+}
+.task .complete{
+    background-color: green;
+}
+
+.controls #deleteTodo{
+    background-color: red;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.controls h5{
+display: block; 
+
+}
