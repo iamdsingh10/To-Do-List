@@ -13,6 +13,7 @@ Unlike a basic todo app, this project **fetches initial tasks from an external A
 - ➕ Add new todos instantly
 - ❌ Delete tasks with real-time DOM updates
 - 🔄 Uses **Async/Await** for asynchronous handling
+- ⏱ Implements **setTimeout** for delayed UI responses
 - 📁 Modular and organized JavaScript structure
 - 📱 Fully responsive layout
 
