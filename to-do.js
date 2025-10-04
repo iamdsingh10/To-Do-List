@@ -152,7 +152,7 @@ document.getElementById('delay').onclick= function(e){
 
 // it generates todo with the help of api from server
 
-const apiAddress = 'https://jsonplaceholder.typicode.com/posts';
+const apiAddress = 'https://123jsonplaceholder.typicode.com/posts';
 
 document.getElementById('api').onclick= function(e){
     e.preventDefault();
@@ -162,6 +162,8 @@ document.getElementById('api').onclick= function(e){
            for(let work of data.splice(0,5)){
             createTodo(  work.title);
            }
+        }).catch(fail=>{
+            alert('Api is not working Baby!');
         })
     })
 }
