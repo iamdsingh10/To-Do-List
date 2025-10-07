@@ -162,8 +162,8 @@ document.getElementById('api').onclick= function(e){
            for(let work of data.splice(0,5)){
             createTodo(  work.title);
            }
+        })
         }).catch(fail=>{
             alert('Api is not working Baby!');
-        })
     })
 }

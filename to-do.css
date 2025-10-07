@@ -12,7 +12,7 @@ body{
      top: 25%;
     left: 25%;
     /* transform: translate(-50%, -50%); */
-    background-color: #00008B;
+    background-color: #778899;
     border-radius: 10px;
 }
 .controls{
@@ -26,9 +26,16 @@ body{
     height: 25px;
     border: none;
     color: black;
+    transition: all 0.3s ease;
     position: relative;
     border-radius: 10px;
 padding: 12px;
+}
+
+.controls input:hover{
+    transform: scale(1.05);       /* Slightly bigger */
+  border-color: #3b82f6;        /* Blue border */
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3); /* Glow effect */
 }
 
 .controls button{
