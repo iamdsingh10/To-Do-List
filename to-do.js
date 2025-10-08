@@ -167,3 +167,30 @@ document.getElementById('api').onclick= function(e){
             alert('Api is not working Baby!');
     })
 }
+
+//-------------------->>>>>>>Async data<<<<<<<<<<<<<<-----------------------
+
+async function getApiData(url){
+        try{
+            const response= await fetch(url);
+            const data = await response.json();
+            return data;
+        }catch{
+            alert('there is some issue with async');
+        }
+    }
+
+
+document.getElementById('async').onclick = function(e){
+    e.preventDefault();
+
+    getApiData('https://jsonplaceholder.typicode.com/posts').then(data=>{   // here i am calling the function basically a asynchronous operation
+    //debugger
+    for(let todo of data.splice(0,5)){
+        createTodo(todo.title);
+    }
+
+})
+
+    
+}
